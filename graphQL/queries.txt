@@ -22,3 +22,7 @@ FETCH BY ID
 {
   "query": "{ itemById(id: 1) { id name description } }"
 }
+
+
+
+# This type should be there in all the graphQL, it's job is to define the entry points to the graph and to specify the return points of those entry points. Eg: If I want the user to query the Items and get back all the items list then I have to mention that in this as a resolver. So this sets the entry point where user can start initially
