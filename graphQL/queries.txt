@@ -1,0 +1,24 @@
+CREATE
+{
+  "query": "mutation { createItem(name: \"Laptop\", description: \"A powerful gaming laptop\") { item { id name description } } }"
+}
+
+UPDATE
+{
+  "query": "mutation { updateItem(id: 1, name: \"Gaming Laptop\", description: \"A high-end gaming laptop\") { item { id name description } } }"
+}
+
+DELETE
+{
+  "query": "mutation { deleteItem(id: 1) { ok } }"
+}
+
+FETCH ALL
+{
+  "query": "{ allItems { id name description } }"
+}
+
+FETCH BY ID
+{
+  "query": "{ itemById(id: 1) { id name description } }"
+}
